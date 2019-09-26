@@ -1,3 +1,8 @@
+<a name="0.5.3"></a>
+### v0.5.3 (2015-09-26)
+* Remove async from deps
+* Update devDependencies
+
 <a name="0.5.2"></a>
 ### 0.5.2 (2015-02-27)
 
