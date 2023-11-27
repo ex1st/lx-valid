@@ -1,8 +1,8 @@
 /*!
- * lx-valid - v0.5.3 - 2019-09-25
+ * lx-valid - v0.5.4 - 2023-11-27
  * https://github.com/litixsoft/lx-valid
  *
- * Copyright (c) 2019 Litixsoft GmbH
+ * Copyright (c) 2023 Litixsoft GmbH
  * Licensed MIT
  */
 
@@ -291,7 +291,7 @@
             return value !== undefined;
         },
         mongoId: function(value) {
-            return value && typeof value === 'object' && value._bsontype === 'ObjectID' && validate.formats['mongo-id'].test(value);
+            return value && typeof value === 'object' && (value._bsontype === 'ObjectID' || value._bsontype === 'ObjectId') && validate.formats['mongo-id'].test(value);
         }
     };
 
