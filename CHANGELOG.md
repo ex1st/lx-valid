@@ -1,3 +1,8 @@
+<a name="0.5.4"></a>
+### v0.5.4 (2023-11-27)
+* Add support for BSON v5
+* Update BSON in devDependencies
+
 <a name="0.5.3"></a>
 ### v0.5.3 (2015-09-26)
 * Remove async from deps

@@ -1440,17 +1440,17 @@ describe('Validator', function () {
                 }
             };
 
-            var ObjectID = require('bson').ObjectID;
+            var ObjectId = require('bson').ObjectId;
 
             expect(val.validate({num: 3}, schema).valid).toBeTruthy();
             expect(val.validate({num: '3.55'}, schema).valid).toBeTruthy();
             expect(val.validate({num: '3'}, schema).valid).toBeFalsy();
             expect(val.validate({num: 'test'}, schema).valid).toBeFalsy();
 
-            expect(val.validate({id: new ObjectID()}, schema).valid).toBeTruthy();
-            expect(val.validate({id: new ObjectID().toString()}, schema).valid).toBeTruthy();
+            expect(val.validate({id: new ObjectId()}, schema).valid).toBeTruthy();
+            expect(val.validate({id: new ObjectId().toString()}, schema).valid).toBeTruthy();
             expect(val.validate({id: '507f191e810c19729de860'}, schema).valid).toBeFalsy();
-            expect(val.validate({id: {id: '123', _bsontype: 'ObjectID'}}, schema).valid).toBeFalsy();
+            expect(val.validate({id: {id: '123', _bsontype: 'ObjectId'}}, schema).valid).toBeFalsy();
         });
 
         it('should return false when validating a not existing type', function () {

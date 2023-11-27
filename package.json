@@ -43,8 +43,8 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "bson": "^4.0.2",
-        "grunt": "^1.0.4",
+        "bson": "^5.5.1",
+        "grunt": "^1.6.1",
         "grunt-bg-shell": "^2.3.3",
         "grunt-bump": "^0.8.0",
         "grunt-contrib-clean": "^2.0.0",

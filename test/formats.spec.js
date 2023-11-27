@@ -134,8 +134,8 @@ describe('Formats', function () {
     });
 
     it('should validate a mongo-id correctly', function () {
-        var ObjectID = require('bson').ObjectID;
-        var res1 = val.formats.mongoId(new ObjectID());
+        var ObjectId = require('bson').ObjectId;
+        var res1 = val.formats.mongoId(new ObjectId());
         var res2 = val.formats.mongoId('511106fc574d81d815000001');
         var res3 = val.formats.mongoId('google');
 
